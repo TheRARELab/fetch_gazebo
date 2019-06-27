@@ -35,7 +35,7 @@ fetchit_challenge | | | |
 
 ## Changes
 1. Removed the dropoff box from all worlds.
-2. Removed the gearbox container fromall worlds.
+2. Removed the gearbox container from all worlds.
 3. Added more gears and gearbox parts to ``` fetchit_challenge_arena_montreal2019_highlights.world``` and ```fetchit_challenge_arena_montreal2019.world```
 
 Before:
