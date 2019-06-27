@@ -33,3 +33,13 @@ fetch_gazebo | [![Build Status](http://build.ros.org/buildStatus/icon?job=Idev__
 fetch_gazebo_demo | | | |
 fetchit_challenge | | | |
 
+## Changes
+1. Removed the dropoff box from all worlds.
+2. Removed the gearbox container fromall worlds.
+3. Added more gears and gearbox parts to ``` fetchit_challenge_arena_montreal2019_highlights.world``` and ```fetchit_challenge_arena_montreal2019.world```
+
+Before:
+![Before](https://user-images.githubusercontent.com/15792263/60297683-bfdfc200-98f6-11e9-823e-800ea054f985.png)
+
+After:
+![After](https://user-images.githubusercontent.com/15792263/60297731-dede5400-98f6-11e9-9f44-3576f3c05bf7.png)
