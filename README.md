@@ -39,7 +39,7 @@ fetchit_challenge | | | |
 3. Added more gears and gearbox parts to ``` fetchit_challenge_arena_montreal2019_highlights.world``` and ```fetchit_challenge_arena_montreal2019.world```
 
 Before:
-![before](https://user-images.githubusercontent.com/15792263/60299476-ca03bf80-98fa-11e9-9acd-da0bb6c6d90f.png)
+![b4](https://user-images.githubusercontent.com/15792263/60300328-c1ac8400-98fc-11e9-857b-f016a7c77213.png)
 
 After:
 ![after](https://user-images.githubusercontent.com/15792263/60299471-c7a16580-98fa-11e9-94cf-291c5348eb02.png)
