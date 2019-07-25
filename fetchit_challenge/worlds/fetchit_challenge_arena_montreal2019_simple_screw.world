@@ -20,9 +20,9 @@
     </include>
 
     <include>
-      <uri>model://50mmbin</uri>
-      <name>50mmbin</name>
-      <pose>1.1789 -0.69649 0.787679 0 0 -1.57</pose>
+      <uri>model://screw_bin</uri>
+      <name>screw_bin</name>
+      <pose>1.273518 -0.580070 0.791994 0 0 -1.570000</pose>
     </include>
 
     <include>

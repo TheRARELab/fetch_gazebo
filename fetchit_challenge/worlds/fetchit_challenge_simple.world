@@ -66,10 +66,11 @@
     </include>
 
     <include>
-      <uri>model://50mmbin</uri>
-      <name>50mmbin</name>
-      <pose>0.097790 1.2 0.801 0 0 0</pose>
+      <uri>model://screw_bin</uri>
+      <name>screw_bin</name>
+      <pose>0.049025 1.2 0.801 0 0 0</pose>
     </include>
+
 
     <!-- Lights -->
     <!--
