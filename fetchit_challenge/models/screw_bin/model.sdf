@@ -4,7 +4,20 @@
       <static>0</static>
       <link name='link'>
         <inertial>
+          <!-- Weight = 1.7lb -> 0.771107kg-->
           <mass>0.771107</mass>
+          <!--Moments of inertia were roughly calculated using the formulas for a solid box found here:
+              https://en.wikipedia.org/wiki/List_of_moments_of_inertia
+                length (x) = 20in = 0.508m
+                width (y) = 15in = 0.381m
+                depth (z) = 5in = 0.127m
+		ixx = 1/12 * mass * (width^2 + depth^2)
+                iyy = 1/12 * mass * (height^2 + depth^2)
+                izz = 1/12 * mass * (width^2 + height^2)
+
+              They are not perfect, because we are not using a solid box but it is good enough for now.
+              TODO: get more accurate moments of inertia.
+          -->
           <inertia>
             <ixx>0.010364</ixx>
             <ixy>0.000000</ixy>
