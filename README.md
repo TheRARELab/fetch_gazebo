@@ -37,9 +37,22 @@ fetchit_challenge | | | |
 1. Removed the dropoff box from all worlds.
 2. Removed the gearbox container from all worlds.
 3. Added more gears and gearbox parts to ``` fetchit_challenge_arena_montreal2019_highlights.world``` and ```fetchit_challenge_arena_montreal2019.world```
+4. Updated the screw bin in all worlds
+5. Added screws to ``` fetchit_challenge_arena_montreal2019_highlights.world``` and ```fetchit_challenge_arena_montreal2019.world```
+6. Added simple worlds based on ``` fetchit_challenge_arena_montreal2019_highlights.world``` for each task.  
+      To run use:
+
+      Caddy table: `roslaunch fetchit_challenge main_arena_montreal2019_simple_caddy.launch`
+
+      Schunk table: `roslaunch fetchit_challenge main_arena_montreal2019_simple_schunk_machine.launch`
+
+      Screw table: `roslaunch fetchit_challenge main_arena_montreal2019_simple_screw.launch`
+
+      Gearbox table:`roslaunch fetchit_challenge main_arena_montreal2019_simple_gearbox.launch`
+
 
 Before:
 ![b4](https://user-images.githubusercontent.com/15792263/60300328-c1ac8400-98fc-11e9-857b-f016a7c77213.png)
 
 After:
-![after](https://user-images.githubusercontent.com/15792263/60299471-c7a16580-98fa-11e9-94cf-291c5348eb02.png)
+![after](https://user-images.githubusercontent.com/15792263/62237631-53495e80-b39f-11e9-9197-5f766de23f11.png)
