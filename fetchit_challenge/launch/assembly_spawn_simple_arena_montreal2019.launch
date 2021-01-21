@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
+<!--
     <include file="$(find fetchit_challenge)/launch/assembly_largegear_spawn.launch" ns="large_gear_0">
         <arg name="robot_name" default="large_gear_0"/>
         <arg name="x" value="-1.028726" />
@@ -16,12 +17,14 @@
         <arg name="y" value="-0.038866" />
 	<arg name="roll" value="1" />
     </include>
+-->
     <include file="$(find fetchit_challenge)/launch/assembly_largegear_spawn.launch" ns="large_gear_3">
         <arg name="robot_name" default="large_gear_3"/>
 	<arg name="x" value="-0.920092" />
         <arg name="y" value="-0.061508" />
 	<arg name="roll" value="1" />
     </include>
+<!--
     <include file="$(find fetchit_challenge)/launch/assembly_smallgear_spawn.launch" ns="small_gear_0">
         <arg name="robot_name" default="small_gear_0"/>
         <arg name="x" value="-0.918143" />
@@ -37,6 +40,7 @@
         <arg name="x" value="-0.902303" />
         <arg name="y" value="-0.545914" />
     </include>
+-->
     <include file="$(find fetchit_challenge)/launch/assembly_smallgear_spawn.launch" ns="small_gear_3">
         <arg name="robot_name" default="small_gear_3"/>
         <arg name="x" value="-0.949333" />
