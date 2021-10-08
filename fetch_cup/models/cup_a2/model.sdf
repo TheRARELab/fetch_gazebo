@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <model name="cup_a2">
+      <static>0</static>
+      <link name='link'>
+        <inertial>
+          <!-- Weight = 0.185lb -> 0.083914588kg-->
+          <mass>0.023914588</mass>
+          <inertia>
+            <ixx>1.291e-7</ixx>
+            <ixy>-1e-9</ixy>
+            <ixz>2e-9</ixz>
+            <iyy>1.272e-7</iyy>
+            <iyz>5.2e-9</iyz>
+            <izz>1.086e-7</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://cup_a2/meshes/cup_a2.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>30.0</mu>
+                <mu2>30.0</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cup_a2/meshes/cup_a2.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 0.5 1</diffuse>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+  </model>
+</sdf>
