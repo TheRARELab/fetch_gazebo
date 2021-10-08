@@ -57,3 +57,15 @@ Before:
 
 After:
 ![after](https://user-images.githubusercontent.com/15792263/62237631-53495e80-b39f-11e9-9197-5f766de23f11.png)
+
+
+
+models cup_a nad pitcher_base from YCB_affordance
+
+@inproceedings{corona2020ganhand,
+  title={Ganhand: Predicting human grasp affordances in multi-object scenes},
+  author={Corona, Enric and Pumarola, Albert and Alenya, Guillem and Moreno-Noguer, Francesc and Rogez, Gr{\'e}gory},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5031--5041},
+  year={2020}
+}
