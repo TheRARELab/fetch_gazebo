@@ -5,14 +5,14 @@
       <link name='link'>
         <inertial>
           <!-- Weight = 0.185lb -> 0.083914588kg-->
-          <mass>0.083914588</mass>
+          <mass>0.023914588</mass>
           <inertia>
-            <ixx>0.00002454271</ixx>
-            <ixy>0.000000</ixy>
-            <ixz>0.000000</ixz>
-            <iyy>0.0001689116</iyy>
-            <iyz>0.000000</iyz>
-            <izz>0.00018046111</izz>
+            <ixx>1.291e-7</ixx>
+            <ixy>-1e-9</ixy>
+            <ixz>2e-9</ixz>
+            <iyy>1.272e-7</iyy>
+            <iyz>5.2e-9</iyz>
+            <izz>1.086e-7</izz>
           </inertia>
         </inertial>
         <collision name='collision'>
