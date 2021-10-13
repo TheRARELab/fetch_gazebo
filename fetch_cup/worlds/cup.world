@@ -20,17 +20,20 @@
       <pose>-0.305 1.28179 0.0 0 0 0</pose>
     </include>
 
-    <include>
-      <uri>model://pitcher_base</uri>
-      <name>pitcher_base</name>
-      <pose>-0.024991 1.128376 0.784992 0 0 3.105351</pose>
-    </include>
 
     <include>
       <uri>model://cup_a</uri>
-      <name>cup_a1</name>
+      <name>cup_a</name>
       <pose>-0.527621 1.178772 0.776483 0 0 3.105351</pose>
     </include>
+
+    <include>
+      <uri>model://pitcher_base</uri>
+      <name>pitcher_base</name>
+      <pose>-0.093813 1.189535 0.813011 0 0 3.105351</pose>
+    </include>
+
+
 
     <light name='user_point_light_0' type='point'>
       <pose frame=''>1.0 1.0 3.5 0 0 0</pose>
