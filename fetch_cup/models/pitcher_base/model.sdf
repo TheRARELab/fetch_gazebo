@@ -7,12 +7,12 @@
           <!-- Weight = 0.185lb -> 0.083914588kg-->
           <mass>0.083914588</mass>
           <inertia>
-            <ixx>1.333973e-4</ixx>
-            <ixy>-7.991e-7</ixy>
-            <ixz>-6.084e-7</ixz>
-            <iyy>1.33411e-4</iyy>
-            <iyz>-1.0850e-6</iyz>
-            <izz>4.70443e-5</izz>
+            <ixx>0.000013</ixx>
+            <ixy>0.000000</ixy>
+            <ixz>0.000000</ixz>
+            <iyy>0.0</iyy>
+            <iyz>0.000013</iyz>
+            <izz>0.00018046111</izz>
           </inertia>
         </inertial>
         <collision name='collision'>
