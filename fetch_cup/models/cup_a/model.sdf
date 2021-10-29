@@ -4,8 +4,8 @@
       <static>0</static>
       <link name='link'>
         <inertial>
-          <!-- Weight = 0.185lb -> 0.083914588kg-->
-          <mass>0.023914588</mass>
+          <!-- Empty Weight = 32g -> 0.032, full weight (marbles) 206g ->.206-->
+          <mass>0.032</mass>
           <inertia>
             <ixx>1.291e-7</ixx>
             <ixy>-1e-9</ixy>

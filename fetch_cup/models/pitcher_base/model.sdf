@@ -4,8 +4,8 @@
       <static>0</static>
       <link name='link'>
         <inertial>
-          <!-- Weight = 0.185lb -> 0.083914588kg-->
-          <mass>0.083914588</mass>
+          <!-- Weight = 184g -> 0.184-->
+          <mass>0.184</mass>
           <inertia>
             <ixx>0.000013</ixx>
             <ixy>0.000000</ixy>
