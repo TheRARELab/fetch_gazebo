@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
-  <arg name="world_name" default="$(find fetchit_challenge)/worlds/fetchit_challenge_arena_montreal2019_simple_gearbox.world"/>
+  <arg name="world_name" default="$(find fetchit_challenge)/worlds/fetchit_challenge_arena_montreal2019_widgets_and_jenga.world"/>
   <arg name="paused" default="false"/>
   <arg name="verbose" default="true"/>
   <arg name="physics" default="ode"/>

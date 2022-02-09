@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find fetchit_challenge)/launch/fetchit_challenge_arena_montreal2019_widgets_and_jenga.launch"/>
+
+    <include file="$(find fetchit_challenge)/launch/fetch_robot_spawn.launch">
+        <arg name="x" value="0.0" />
+        <arg name="y" value="0.571285" />
+        <arg name="z" value="0.0" />
+        <arg name="yaw" value="-1.57" />
+        <arg name="robot" value="fetch"/>
+    </include>
+
+</launch>
