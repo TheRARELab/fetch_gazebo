@@ -4,22 +4,21 @@
       <static>1</static>
       <link name='link'>
         <inertial>
-          <mass>0.0592855</mass>
+          <mass>4.1</mass>
           <inertia>
-            <ixx>2.31818050784e-05</ixx>
-            <ixy>0.000000</ixy>
-            <ixz>0.000000</ixz>
-            <iyy>2.31851837098e-05</iyy>
-            <iyz>0.000000</iyz>
-            <izz>8.88944636856e-06</izz>
-          </inertia>
+              <ixx>0.304192</ixx>
+              <ixy>0.0</ixy>
+              <ixz>0.0</ixz>
+              <iyy>0.966527</iyy>
+              <iyz>0.0</iyz>
+              <izz>0.916854</izz>
+            </inertia>
         </inertial>
         <collision name='collision'>
           <geometry>
-            <mesh>
-              <uri>model://fetchit_table_em/meshes/simple_table.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
+            <box>
+              <size>1.524 0.61 0.75</size>
+            </box>
           </geometry>
           <surface>
             <friction>
