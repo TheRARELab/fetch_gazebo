@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+
+    <include>
+      <uri>model://ground_plane</uri>
+      <pose>0 0 -0.005 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://fetchit_arena</uri>
+      <name>fetchit_arena1</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://rarelab_long_table</uri>
+      <name>gearbox_table</name>
+      <pose>0.478115 1.539973 0.0 0 0 3.1416</pose>
+    </include>
+
+    <include>
+      <uri>model://rarelab_long_table</uri>
+      <name>caddy_table</name>
+      <pose>0.710161 -0.785838 0.0 0 0 3.1416</pose>
+    </include>
+
+
+    <include>
+      <uri>model://caddy_green</uri>
+      <name>caddy_green1</name>
+      <pose>-0.032536 -0.942377 0.646347 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://caddy_red</uri>
+      <name>caddy_red1</name>
+      <pose>-0.311593 -0.942377 0.646347 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://caddy_yellow</uri>
+      <name>caddy_yellow1</name>
+      <pose>-0.604281 -0.942377 0.646347 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://gearbox_bottom_grey</uri>
+      <name>gearbox_bottom_grey1</name>
+      <pose>-0.424903 0.854808 0.626969 0 0 3.105351</pose>
+    </include>
+
+    <include>
+      <uri>model://gearbox_bottom_grey</uri>
+      <name>gearbox_bottom_grey2</name>
+      <pose>-0.229921 1.035252 0.655835 -1.570796 0 2.317278</pose>
+    </include>
+
+    <include>
+      <uri>model://gearbox_bottom_grey</uri>
+      <name>gearbox_bottom_grey3</name>
+      <pose>-0.329409 1.222056 0.690921 3.141546 0 -2.437420</pose>
+    </include>
+
+    <include>
+      <uri>model://gearbox_bottom_grey</uri>
+      <name>gearbox_bottom_grey4</name>
+      <pose>-0.482731 1.025975 0.635592 -1.570796 0 -2.472675</pose>
+    </include>
+
+
+    <light name='user_point_light_0' type='point'>
+      <pose frame=''>4.0 4.0 3.5 0 0 0</pose>
+      <diffuse>0.7 0.7 0.7 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>1.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+    </light>
+
+    <light name='user_point_light_1' type='point'>
+      <pose frame=''>-4.0 4.0 3.5 0 0 0</pose>
+      <diffuse>0.7 0.7 0.7 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>1.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+    </light>
+
+    <light name='user_point_light_2' type='point'>
+      <pose frame=''>-4.0 -4.0 3.5 0 0 0</pose>
+      <diffuse>0.7 0.7 0.7 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>1.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+    </light>
+
+
+    <light name='user_point_light_3' type='point'>
+      <pose frame=''>4.0 -4.0 3.5 0 0 0</pose>
+      <diffuse>0.7 0.7 0.7 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>1.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+    </light>
+
+
+  </world>
+</sdf>
