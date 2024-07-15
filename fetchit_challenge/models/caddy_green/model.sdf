@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <sdf version='1.4'>
   <model name="caddy_green">
-      <static>1</static>
+      <static>0</static>
       <link name='link'>
         <inertial>
           <mass>0.0680389</mass>
