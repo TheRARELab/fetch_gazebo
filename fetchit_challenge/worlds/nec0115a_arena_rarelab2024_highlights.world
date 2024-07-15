@@ -13,17 +13,16 @@
       <pose>0 0 0 0 0 0</pose>
     </include>
 
-
     <include>
       <uri>model://rarelab_long_table</uri>
-      <name>gearbox_bottom_table</name>
-      <pose>-1.233108 0.802531 0.0 0 0 0</pose>
+      <name>gearbox_table</name>
+      <pose>0.478115 1.539973 0.0 0 0 3.1416</pose>
     </include>
 
     <include>
       <uri>model://rarelab_long_table</uri>
       <name>caddy_table</name>
-      <pose>0.710197 -0.796795 0.0 0 0 3.1416</pose>
+      <pose>0.710161 -0.785838 0.0 0 0 3.1416</pose>
     </include>
 
 
