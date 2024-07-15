@@ -19,4 +19,5 @@
     <arg name="z" value="0.0" />
     <arg name="yaw" value="0" />
     <arg name="robot" value="fetch"/>
+  </include>
 </launch>
