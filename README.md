@@ -57,3 +57,9 @@ Before:
 
 After:
 ![after](https://user-images.githubusercontent.com/15792263/62237631-53495e80-b39f-11e9-9197-5f766de23f11.png)
+
+7. Added NEC 0115A arena with long tables
+```
+roslaunch fetchit_challenge nec0115a_arena.launch
+roslaunch fetchit_challenge nec0115a_arena_highlights.launch
+```
