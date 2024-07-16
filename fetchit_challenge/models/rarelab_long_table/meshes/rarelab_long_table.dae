@@ -11,7 +11,7 @@
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
-    <effect id="Material_001-effect">
+    <effect id="light_gray-effect">
       <profile_COMMON>
         <technique sid="common">
           <lambert>
@@ -31,8 +31,8 @@
   </library_effects>
   <library_images/>
   <library_materials>
-    <material id="Material_001-material" name="Material.001">
-      <instance_effect url="#Material_001-effect"/>
+    <material id="light_gray-material" name="Material.001">
+      <instance_effect url="#light_gray-effect"/>
     </material>
   </library_materials>
   <library_geometries>
@@ -61,7 +61,7 @@
         <vertices id="untitled-mesh-vertices">
           <input semantic="POSITION" source="#untitled-mesh-positions"/>
         </vertices>
-        <triangles material="Material_001-material" count="12">
+        <triangles material="light_gray-material" count="12">
           <input semantic="VERTEX" source="#untitled-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#untitled-mesh-normals" offset="1"/>
           <p>0 0 1 1 2 2 2 2 1 1 3 3 4 4 0 0 5 5 5 5 0 0 2 2 6 6 4 4 7 7 7 7 4 4 5 5 1 1 6 6 3 3 3 3 6 6 7 7 4 4 6 6 0 0 0 0 6 6 1 1 8 8 9 8 10 8 10 8 9 8 11 8</p>
@@ -76,7 +76,7 @@
         <instance_geometry url="#untitled-mesh" name="untitled">
           <bind_material>
             <technique_common>
-              <instance_material symbol="Material_001-material" target="#Material_001-material"/>
+              <instance_material symbol="light_gray-material" target="#light_gray-material"/>
             </technique_common>
           </bind_material>
         </instance_geometry>
