@@ -14,9 +14,9 @@
     </include>
 
     <include>
-      <uri>model://fetchit_table_fetch</uri>
-      <name>fetchit_table_caddy</name>
-      <pose>-0.135 -1.28849 0.0 0 0 3.1416</pose>
+      <uri>model://rarelab_long_table</uri>
+      <name>gearbox_table</name>
+      <pose>0.468304 1.457626 0.0 0 0 -3.141585</pose>
     </include>
 
     <include>
