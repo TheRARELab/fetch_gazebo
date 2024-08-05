@@ -36,11 +36,6 @@
       <name>caddy_yellow1</name>
       <pose>-0.414898 -1.20441 0.826729 0 0 0</pose>
     </include>
-
-    <include>
-      <uri>model://fetchit_table_fetch</uri>
-      <name>fetchit_table_gearbox_bottom</name>
-      <pose>-0.305 1.225045 0.0 0 0 0</pose>
     </include>
 
     <include>
