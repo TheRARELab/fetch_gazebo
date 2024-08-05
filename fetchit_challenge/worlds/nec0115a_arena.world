@@ -14,57 +14,58 @@
     </include>
 
     <include>
-      <uri>model://fetchit_table_fetch</uri>
-      <name>fetchit_table_caddy</name>
-      <pose>-0.135 -1.28849 0.0 0 0 3.1416</pose>
+      <uri>model://rarelab_long_table</uri>
+      <name>gearbox_table</name>
+      <pose>0.468304 1.457626 0.0 0 0 -3.141585</pose>
     </include>
+
+    <include>
+      <uri>model://rarelab_long_table</uri>
+      <name>caddy_table</name>
+      <pose>0.710161 -0.806812 0.0 0 0 -3.141585</pose>
+    </include>
+
 
     <include>
       <uri>model://caddy_green</uri>
       <name>caddy_green1</name>
-      <pose>0.168355 -1.20441 0.826729 0 0 0</pose>
+      <pose>-0.032536 -0.942377 0.646347 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://caddy_red</uri>
       <name>caddy_red1</name>
-      <pose>-0.113059 -1.20441 0.826729 0 0 0</pose>
+      <pose>-0.311593 -0.942377 0.646347 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://caddy_yellow</uri>
       <name>caddy_yellow1</name>
-      <pose>-0.414898 -1.20441 0.826729 0 0 0</pose>
-    </include>
-
-    <include>
-      <uri>model://fetchit_table_fetch</uri>
-      <name>fetchit_table_gearbox_bottom</name>
-      <pose>-0.305 1.225045 0.0 0 0 0</pose>
+      <pose>-0.604281 -0.942377 0.646347 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://gearbox_bottom_grey</uri>
       <name>gearbox_bottom_grey1</name>
-      <pose>-0.024991 1.128376 0.784992 0 0 3.105351</pose>
+      <pose>-0.424903 0.854808 0.626969 0 0 3.105351</pose>
     </include>
 
     <include>
       <uri>model://gearbox_bottom_grey</uri>
       <name>gearbox_bottom_grey2</name>
-      <pose>0.070919 1.347065 0.804964 -1.570796 0 2.317278</pose>
+      <pose>-0.229921 1.035252 0.655835 -1.570796 0 2.317278</pose>
     </include>
 
     <include>
       <uri>model://gearbox_bottom_grey</uri>
       <name>gearbox_bottom_grey3</name>
-      <pose>-0.173732 1.354286 0.837371 3.141545 0 -2.437420</pose>
+      <pose>-0.329409 1.222056 0.690921 3.141546 0 -2.437420</pose>
     </include>
 
     <include>
       <uri>model://gearbox_bottom_grey</uri>
       <name>gearbox_bottom_grey4</name>
-      <pose>-0.165214 1.215589 0.804963 -1.570796 0 -2.472675</pose>
+      <pose>-0.482731 1.025975 0.635592 -1.570796 0 -2.472675</pose>
     </include>
 
 
