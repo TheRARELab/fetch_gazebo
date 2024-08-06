@@ -29,25 +29,25 @@
     <include>
       <uri>model://caddy_green</uri>
       <name>caddy_green1</name>
-      <pose>0.168355 -1.20441 0.775 0 0 0</pose>
+      <pose>0.168355 -1.06637 0.775 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://caddy_red</uri>
       <name>caddy_red1</name>
-      <pose>-0.113059 -1.20441 0.775 0 0 0</pose>
+      <pose>-0.113059 -1.06637 0.775 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://caddy_yellow</uri>
       <name>caddy_yellow1</name>
-      <pose>-0.414898 -1.20441 0.775 0 0 0</pose>
+      <pose>-0.414898 -1.06637 0.775 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://gearbox_bottom_grey</uri>
       <name>gearbox_bottom_grey1</name>
-      <pose>-0.134223 1.019262 0.734993 0 0 -0.085</pose>
+      <pose>-0.134223 0.990266 0.734993 0 0 -0.085</pose>
     </include>
 
     <light name='user_point_light_0' type='point'>
