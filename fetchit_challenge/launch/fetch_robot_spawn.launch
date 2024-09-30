@@ -6,15 +6,41 @@
   <arg name="y" default="-3.594756" />
   <arg name="z" default="0.0" />
   <arg name="yaw" default="-1.57" />
+
+
+  <!-- Define the first robot -->
   <arg name="robot" default="fetch"/>
 
+  <!-- Define the second robot-->
+  <arg name="robot2" default="fetch2"/>
+
+
+
   <!-- Oh, you wanted a robot? -->
-  <include file="$(find fetch_gazebo)/launch/include/$(arg robot)_pp.launch.xml" >
-  <!-- include file="$(find fetch_gazebo)/launch/include/$(arg robot).launch.xml" --> <!-- Arm tucked, like Fetch Playground demo -->
+  <include file="$(find fetch_gazebo)/launch/include/fetch_pp.launch.xml" >
     <arg name="x" value="$(arg x)" />
     <arg name="y" value="$(arg y)" />
     <arg name="z" value="$(arg z)" />
     <arg name="yaw" value="$(arg yaw)" />
+    <arg name="robot" value="$(arg robot)" />
   </include>
+  <include file="$(find fetch_gazebo)/launch/include/head_camera.launch.xml">
+     <arg name="robot" value="fetch" />
+  </include>
+
+  <include file="$(find fetch_gazebo)/launch/include/fetch_pp.launch.xml" >
+    <arg name="x" value="$(arg x)" />
+    <arg name="y" value="$(arg y)" />
+    <arg name="z" value="$(arg z)" />
+    <arg name="yaw" value="$(arg yaw)" />
+    <arg name="robot" value="$(arg robot2)" />
+  </include>
+  <include file="$(find fetch_gazebo)/launch/include/head_camera.launch.xml">
+     <arg name="robot" value="fetch2" />
+  </include>
+
+
+
+
 
 </launch>
