@@ -1,34 +1,67 @@
 <launch>
-
+  <!-- Default Fetch robot (test as physical robot) -->
   <arg name="x" default="0.0" />
   <arg name="y" default="0.0" />
   <arg name="z" default="0.0" />
   <arg name="yaw" default="0.0" />
+  <arg name="robot_name" default="fetch"/>
+
+  <!-- Fetch 2 robot (test as virtual robot) -->
+  <arg name="x_fetch2" default="0.0" />
+  <arg name="y_fetch2" default="0.0" />
+  <arg name="z_fetch2" default="0.0" />
+  <arg name="yaw_fetch2" default="0.0" />
+  <arg name="robot_name_fetch2" default="fetch2" />
 
   <!-- Setup controllers -->
   <rosparam file="$(find fetch_gazebo)/config/default_controllers.yaml" command="load" />
 
-  <!-- URDF and TF support -->
-  <param name="robot_description" command="$(find xacro)/xacro.py $(find fetch_gazebo)/robots/fetch.gazebo.xacro" />
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
-    <param name="publish_frequency" value="100.0"/>
-  </node>
+  <!-- Group for Fetch robot -->
+  <group ns="fetch">
+    <!-- URDF and TF support -->
+    <param name="robot_description" command="$(find xacro)/xacro.py $(find fetch_gazebo)/robots/fetch.gazebo.xacro" />
+    <node name="state_publisher_fetch" pkg="robot_state_publisher" type="robot_state_publisher" >
+      <param name="publish_frequency" value="100.0"/>
+    </node>
 
-  <!-- Put a robot in gazebo, make it look pretty -->
-  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-        args="-urdf -x $(arg x) -y $(arg y) -z $(arg z) -Y $(arg yaw) -model fetch -param robot_description"/>
-  <node name="prepare_robot" pkg="fetch_gazebo" type="prepare_simulated_robot_pick_place.py" />
+    <!-- Spawn Fetch robot in Gazebo -->
+    <node name="urdf_spawner_fetch" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+          args="-urdf -x $(arg x) -y $(arg y) -z $(arg z) -Y $(arg yaw) -model $(arg robot_name) -param robot_description"/>
+    <node name="prepare_robot_fetch" pkg="fetch_gazebo" type="prepare_simulated_robot_pick_place.py" />
+
+    <!-- Start a mux for Fetch robot -->
+    <node pkg="topic_tools" type="mux" name="cmd_vel_mux_fetch" respawn="true" args="base_controller/command_fetch /cmd_vel_fetch /teleop/cmd_vel_fetch">
+      <remap from="mux" to="cmd_vel_mux"/>
+    </node>
+
+    <!-- Head Camera Pipeline for Fetch robot -->
+    <include file="$(find fetch_gazebo)/launch/include/head_camera.launch.xml" />
+  </group>
+
+  <!-- Group for Fetch 2 robot -->
+  <group ns="fetch2">
+    <!-- URDF and TF support -->
+    <param name="robot_description" command="$(find xacro)/xacro.py $(find fetch_gazebo)/robots/fetch.gazebo.xacro" />
+    <node name="state_publisher_fetch2" pkg="robot_state_publisher" type="robot_state_publisher" >
+      <param name="publish_frequency" value="100.0"/>
+    </node>
+
+    <!-- Spawn Fetch 2 robot in Gazebo -->
+    <node name="urdf_spawner_fetch2" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+          args="-urdf -x $(arg x_fetch2) -y $(arg y_fetch2) -z $(arg z_fetch2) -Y $(arg yaw_fetch2) -model $(arg robot_name_fetch2) -param robot_description"/>
+    <node name="prepare_robot_fetch2" pkg="fetch_gazebo" type="prepare_simulated_robot_pick_place.py" />
+
+    <!-- Start a mux for Fetch 2 robot -->
+    <node pkg="topic_tools" type="mux" name="cmd_vel_mux_fetch2" respawn="true" args="base_controller/command_fetch2 /cmd_vel_fetch2 /teleop/cmd_vel_fetch2">
+      <remap from="mux" to="cmd_vel_mux"/>
+    </node>
+
+    <!-- Head Camera Pipeline for Fetch 2 robot -->
+    <include file="$(find fetch_gazebo)/launch/include/head_camera.launch.xml" />
+  </group>
 
   <!-- Give this robot a serial number and version -->
   <param name="robot/serial" value="ABCDEFGHIJKLMNOPQRSTUVWX" />
   <param name="robot/version" value="0.0.1" />
-
-  <!-- Head Camera Pipeline -->
-  <include file="$(find fetch_gazebo)/launch/include/head_camera.launch.xml" />
-
-  <!-- Start a mux between application and teleop -->
-  <node pkg="topic_tools" type="mux" name="cmd_vel_mux" respawn="true" args="base_controller/command /cmd_vel /teleop/cmd_vel">
-    <remap from="mux" to="cmd_vel_mux" />
-  </node>
 
 </launch>
