@@ -6,19 +6,15 @@
   <arg name="y" default="-3.594756" />
   <arg name="z" default="0.0" />
   <arg name="yaw" default="-1.57" />
-  <arg name="robot_name" default="virtual_robot" />
-
+  <arg name="robot" default="fetch"/>
 
   <!-- Oh, you wanted a robot? -->
-  <group ns="$(arg robot_name)">
-    <include file="$(find fetch_gazebo)/launch/include/fetch_pp.launch.xml" >
-    <!-- include file="$(find fetch_gazebo)/launch/include/$(arg robot).launch.xml" --> <!-- Arm tucked, like Fetch Playground demo -->
-        <arg name="x" value="$(arg x)" />
-        <arg name="y" value="$(arg y)" />
-        <arg name="z" value="$(arg z)" />
-        <arg name="yaw" value="$(arg yaw)" />
-
-    </include>
-  </group>
+  <include file="$(find fetch_gazebo)/launch/include/$(arg robot)_pp.launch.xml" >
+  <!-- include file="$(find fetch_gazebo)/launch/include/$(arg robot).launch.xml" --> <!-- Arm tucked, like Fetch Playground demo -->
+    <arg name="x" value="$(arg x)" />
+    <arg name="y" value="$(arg y)" />
+    <arg name="z" value="$(arg z)" />
+    <arg name="yaw" value="$(arg yaw)" />
+  </include>
 
 </launch>
