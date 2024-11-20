@@ -16,7 +16,7 @@
     <include>
       <uri>model://rarelab_long_table</uri>
       <name>gearbox_table</name>
-      <pose>0.468304 1.457626 0.0 0 0 -3.141585</pose>
+      <pose>0.710161 1.457626 0.0 0 0 -3.141585</pose>
     </include>
 
     <include>
@@ -47,24 +47,24 @@
     <include>
       <uri>model://gearbox_bottom_grey</uri>
       <name>gearbox_bottom_grey1</name>
-      <pose>-0.134223 0.990266 0.734993 0 0 -0.085</pose>
+      <pose>0.107473 0.990266 0.734993 0 0 -0.085</pose>
     </include>
     <include>
       <uri>model://gearbox_bottom_grey</uri>
       <name>gearbox_bottom_grey2</name>
-      <pose>-0.229921 1.160252 0.754964 -1.570796 0 2.317278</pose>
+      <pose>0.2646881 1.160252 0.754964 -1.570796 0 2.317278</pose>
     </include>
 
     <include>
       <uri>model://gearbox_bottom_grey</uri>
       <name>gearbox_bottom_grey3</name>
-      <pose>-0.329409 1.347056 0.787368 3.141546 0 -2.437420</pose>
+      <pose>-0.087713 1.347056 0.787368 3.141546 0 -2.437420</pose>
     </include>
 
     <include>
       <uri>model://gearbox_bottom_grey</uri>
       <name>gearbox_bottom_grey4</name>
-      <pose>-0.482731 1.150975 0.754964 -1.570796 0 -2.472675</pose>
+      <pose>-0.241035 1.150975 0.754964 -1.570796 0 -2.472675</pose>
     </include>
 
     <light name='user_point_light_0' type='point'>
