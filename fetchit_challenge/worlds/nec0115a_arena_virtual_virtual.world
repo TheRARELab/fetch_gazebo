@@ -29,7 +29,7 @@
     <include>
       <uri>model://caddy_green</uri>
       <name>caddy_green1</name>
-      <pose>0.168355 -1.06637 0.775 0 0 0</pose>
+      <pose>-0.042685 -1.062823 0.774291 0 0 0</pose>
     </include>
 
 
